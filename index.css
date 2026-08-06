@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #E5E5E5;
+    --scoreboard-bg-color: #1B244A;
+    --scoreboard-text-color: #FFF;
+
+    --score-bg-color: #080002;
+    --score-text-color: #F94F6D;
+    
+    --points-btn-color: #9AABD8;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-bg-color);
+}
+
+.scoreboard-container {
+    width: 575px;
+    height: 385px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--scoreboard-bg-color);
+}
+
+.scoreboard-container > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-name {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: var(--scoreboard-text-color);
+}
+
+.score-name, .points-btns {
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+.score-name,
+.score-points,
+.points-btns button {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.score-points {
+    width: 60%;
+    display: block;
+    padding: 0.4em 0.2em;
+    text-align: center;
+    font-size: 4rem;
+    background-color: var(--score-bg-color);
+    color: var(--score-text-color);
+}
+
+.points-btns {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.points-btns button {
+    width: 30%;
+    height: 44px;
+    border: 1px solid var(--points-btn-color);
+    border-radius: 4px;
+    font-size: 1.3rem;
+    background-color: var(--scoreboard-bg-color);
+    color: var(--points-btn-color);
+}
+
+.points-btns button:hover {
+    cursor: pointer;
+}
